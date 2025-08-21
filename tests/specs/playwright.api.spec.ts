@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import PlaywrightApiClient from '../api/playwrightApi';
 
-test.describe('API Tests', () => {
+test.describe('API Tests - Playwright', () => {
   test('should return Users', async ({ request }) => {
     const response = await PlaywrightApiClient.getUsers(request);
     const responseData = await response.json();

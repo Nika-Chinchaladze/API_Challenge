@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxiosApiClient from '../api/axiosApi';
 
-test.describe('API Tests', () => {
+test.describe('API Tests - Axios', () => {
   test('should return Users', async () => {
     const response = await AxiosApiClient.getUsers();
     const responseData = response.data;
