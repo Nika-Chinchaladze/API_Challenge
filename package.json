@@ -1,0 +1,27 @@
+{
+  "name": "typescript_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "format:code": "npx prettier --write .",
+    "check:code": "tsc --noEmit && eslint tests/** && prettier --check .",
+    "html:report": "npx playwright show-report",
+    "html:clean": "rd /s /q test-results && rd /s /q playwright-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.33.0",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.40.0"
+  },
+  "dependencies": {
+    "axios": "^1.11.0"
+  }
+}
