@@ -17,6 +17,14 @@ test.describe('API Tests - Playwright', () => {
       expect(user).toHaveProperty('phone');
       expect(user).toHaveProperty('website');
       expect(user).toHaveProperty('company');
+      expect(user.id).toBeTruthy();
+      expect(user.name).toBeTruthy();
+      expect(user.username).toBeTruthy();
+      expect(user.email).toBeTruthy();
+      expect(user.address).toBeTruthy();
+      expect(user.phone).toBeTruthy();
+      expect(user.website).toBeTruthy();
+      expect(user.company).toBeTruthy();
     }
   });
 
@@ -31,6 +39,10 @@ test.describe('API Tests - Playwright', () => {
       expect(post).toHaveProperty('id');
       expect(post).toHaveProperty('title');
       expect(post).toHaveProperty('body');
+      expect(post.userId).toBeTruthy();
+      expect(post.id).toBeTruthy();
+      expect(post.title).toBeTruthy();
+      expect(post.body).toBeTruthy();
     }
   });
 });
