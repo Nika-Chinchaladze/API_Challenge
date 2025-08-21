@@ -1,4 +1,5 @@
 type Geo = { lat: string; lng: string };
+
 type Address = {
   street: string;
   suite: string;
@@ -6,6 +7,7 @@ type Address = {
   zipcode: string;
   geo: Geo;
 };
+
 type Company = { name: string; catchPhrase: string; bs: string };
 
 export type User = {
