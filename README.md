@@ -1,6 +1,6 @@
 # API Testing Challenge
 
-This repository contains the solution to the API testing challenge. The challenge involved creating a Postman collection with two GET requests and implementing tests to validate the API responses.
+This repository contains the solution to the API testing challenge.
 
 ## Challenge Requirements
 
